@@ -1,0 +1,29 @@
+import serial
+import time
+import random
+n=random.randint(1,n+1)
+
+if_name_"main":
+ard=serial.serial('com3,9600')
+time.sleep(2)
+
+var = 'pt'
+query="temperature"
+if'temperature'in query:
+var='a'
+c=var.encode()
+
+if var=='a':
+  ard.write(c)
+  time.sleep(1)
+  temp=(ard.readline())
+  hum=(ard.readline())
+  temp=temp.decode()
+  temp=str(temp)
+  hum=hum.decode()
+  hum=str(hum)
+
+  print(temp)
+  print(hum)
+  
+ 
